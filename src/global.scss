@@ -1,0 +1,89 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ion-toolbar{
+    --ion-background-color: var(--ion-color-custom);
+    --ion-color: #FFF;
+    --color: #FFF;
+}
+
+ion-segment-button{
+    --ion-color: #FFF;
+    --color: #FFF;
+}
+
+.sc-ion-segment-md-hion-toolbar:not(.ion-color).sc-ion-segment-md-s > .segment-button-checked, ion-toolbar .sc-ion-segment-md-h:not(.ion-color).sc-ion-segment-md-s > .segment-button-checked {
+    --indicator-color-checked: #FFF;
+    color: #FFF;
+}
+
+ion-menu {
+    --ion-background-color: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");
+    --ion-text-color: var(--ion-color-primary-contrast);
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  
+    ion-toolbar {
+      --background: var(--ion-color-primary);
+    }
+  
+    ion-list {/* optional, but it needs when you use gradient as a background color.*/
+      --ion-background-color: transparent;
+      --color: #FFF;
+    }
+}  
+
+.media{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.list-item{
+    border-radius: 5px;
+    background: #FFF;
+    padding: .5rem;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    border: 1px solid #e3e3e3;
+    margin-bottom: 1rem
+}
+
+.list-item img{
+    margin-right: 10px;
+    max-width: 150px;
+    height: 100%;
+}

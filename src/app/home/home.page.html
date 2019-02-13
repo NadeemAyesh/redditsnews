@@ -1,0 +1,121 @@
+<ion-header>
+  <app-header name="Reddit"></app-header>
+
+  <ion-toolbar>
+    
+    <!-- Segment with default selection -->
+    <ion-segment  [(ngModel)]="selectedIdx" value="python" scrollable>
+      <ion-segment-button href="#python" value="python" checked color="light">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+      <ion-segment-button href="#javascript" value="javascript" color="light">
+        <ion-label>Funny</ion-label>
+      </ion-segment-button>
+      <ion-segment-button color="danger" href="#javascript" value="category3">
+        <ion-label>Sports</ion-label>
+      </ion-segment-button>
+      <ion-segment-button href="#javascript" value="category4">
+        <ion-label>Gamming</ion-label>
+      </ion-segment-button>
+      <ion-segment-button href="#javascript" value="category5">
+        <ion-label>Pics</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div [ngSwitch]="selectedIdx">
+    <div *ngSwitchCase="'python'" ngSelected="selected">
+        <ion-slides slides="1">
+
+            <ion-slide>
+                <ion-card>
+                  <img src="http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg" block/>
+                    <ion-card-header>
+                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                      <ion-card-title>Card Title</ion-card-title>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      Keep close to Nature's heart... and break clear away, once in awhile,
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide>
+        
+            <ion-slide>
+                <ion-card>
+                    <img src="http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg" block/>
+                    <ion-card-header>
+                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                      <ion-card-title>Card Title</ion-card-title>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      Keep close to Nature's heart... and break clear away, once in awhile,
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide>
+        
+            <ion-slide>
+                <ion-card>
+                    <img src="http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg" block/>
+                    <ion-card-header>
+                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                      <ion-card-title>Card Title</ion-card-title>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      Keep close to Nature's heart... and break clear away, once in awhile,
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide>
+
+        </ion-slides>
+
+        <ion-list>
+          <div class="list-item">
+            <div class="media">
+              <img src="https://via.placeholder.com/65x65" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">Media heading asdsa</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus repudiandae magni dolorem quasi</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="media">
+              <img src="https://via.placeholder.com/65x65" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">Media heading asdsa</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus repudiandae magni dolorem quasi </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="media">
+              <img src="https://via.placeholder.com/65x65" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">Media heading asdsa</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus repudiandae magni dolorem quasi </p>
+              </div>
+            </div>
+          </div>
+        </ion-list>
+    </div>
+    <div *ngSwitchCase="'javascript'">
+      
+    </div>
+    <div *ngSwitchCase="'category3'">
+      
+    </div>
+    <div *ngSwitchCase="'category4'">
+      
+    </div>
+    <div *ngSwitchCase="'category5'">
+      
+    </div>
+  </div>
+
+</ion-content>

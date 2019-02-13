@@ -1,0 +1,7 @@
+{
+  "name": "redditsnews",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
